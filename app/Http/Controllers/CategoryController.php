@@ -3,33 +3,15 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use App\Http\Controllers\Controller;
-use App\Http\Requests\ContactRequest;
-use Illuminate\Foundation\Http\FormRequest;
-use App\Models\Category;
-use App\Models\Tag;
-use App\Models\Contact;
 
-class ContactController extends Controller
+class CategoryController extends Controller
 {
     /**
      * Display a listing of the resource.
      */
     public function index()
     {
-        return view('contact.index',[
-            'categories'=>Category::all(),
-            'tags'=>Tag::all(),
-        ]);
-    }
-
-    public function confirm(ContactRequest $request)
-    {
-        $validated = $request->validated();
-        $category = Category::findOrFail($validated['category_id']);
-        $tagIds = $validated['tag_ids'] ?? []; 
-        $tags = Tag::whereIn('id', $tagIds)->get();
-        return view('contact.confirm', compact('validated', 'category', 'tags'));
+        //
     }
 
     /**
@@ -37,7 +19,7 @@ class ContactController extends Controller
      */
     public function create()
     {
-        return view('contacts.create');
+        //
     }
 
     /**
