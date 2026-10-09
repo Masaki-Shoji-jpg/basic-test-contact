@@ -10,6 +10,8 @@ Route::post('/contacts/confirm', [ContactController::class, 'confirm']);
 Route::post('/contacts', [ContactController::class, 'store']);
 Route::get('/thanks', [ContactController::class, 'thanks']);
 
+Route::get('/login', function () {return view('auth.login');})->name('login');
+Route::get('/register', function () {return view('auth.register');})->name('register');
 Route::middleware('auth')->group(function () {
     Route::get('/admin', [AdminController::class, 'index']);
     Route::get('/admin/contacts/{contact}', [AdminController::class, 'show']);
