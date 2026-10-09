@@ -1,0 +1,24 @@
+[33mf20dc2a[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmain[m[33m)[m HEAD@{0}: checkout: moving from feature/Admin to main
+[33m5445f7f[m[33m ([m[1;31morigin/main[m[33m, [m[1;32mfeature/Admin[m[33m)[m HEAD@{1}: reset: moving to HEAD
+[33m5445f7f[m[33m ([m[1;31morigin/main[m[33m, [m[1;32mfeature/Admin[m[33m)[m HEAD@{2}: pull origin main: Fast-forward
+[33m1c5b1ee[m[33m ([m[1;31morigin/feature/contact-store[m[33m, [m[1;31morigin/feature/contact-crud[m[33m, [m[1;32mfeature/contact-store[m[33m, [m[1;32mfeature/contact-crud[m[33m)[m HEAD@{3}: checkout: moving from feature/contact-store to feature/Admin
+[33m1c5b1ee[m[33m ([m[1;31morigin/feature/contact-store[m[33m, [m[1;31morigin/feature/contact-crud[m[33m, [m[1;32mfeature/contact-store[m[33m, [m[1;32mfeature/contact-crud[m[33m)[m HEAD@{4}: checkout: moving from feature/contact-crud to feature/contact-store
+[33m1c5b1ee[m[33m ([m[1;31morigin/feature/contact-store[m[33m, [m[1;31morigin/feature/contact-crud[m[33m, [m[1;32mfeature/contact-store[m[33m, [m[1;32mfeature/contact-crud[m[33m)[m HEAD@{5}: commit: feat:contact CRUD
+[33m16e93d2[m HEAD@{6}: reset: moving to 16e93d2
+[33m16e93d2[m HEAD@{7}: checkout: moving from feature/contactcrud to feature/contact-crud
+[33mf20dc2a[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmain[m[33m)[m HEAD@{8}: reset: moving to HEAD
+[33mf20dc2a[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmain[m[33m)[m HEAD@{9}: checkout: moving from main to feature/contactcrud
+[33mf20dc2a[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmain[m[33m)[m HEAD@{10}: checkout: moving from feature/contact-crud to main
+[33m16e93d2[m HEAD@{11}: commit: feat:Make seeder
+[33mf20dc2a[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmain[m[33m)[m HEAD@{12}: checkout: moving from main to feature/contact-crud
+[33mf20dc2a[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmain[m[33m)[m HEAD@{13}: checkout: moving from feature/category-crud to main
+[33mf20dc2a[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmain[m[33m)[m HEAD@{14}: checkout: moving from main to feature/category-crud
+[33mf20dc2a[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmain[m[33m)[m HEAD@{15}: pull origin main: Fast-forward
+[33mc1106a1[m HEAD@{16}: checkout: moving from feature/issue-1-models to main
+[33mca46575[m[33m ([m[1;31morigin/feature/issue-1-models[m[33m, [m[1;32mfeature/issue-1-models[m[33m)[m HEAD@{17}: commit: feat:Add model relation
+[33m50f5f7c[m HEAD@{18}: checkout: moving from main to feature/issue-1-models
+[33mc1106a1[m HEAD@{19}: checkout: moving from feature/issue-1-models to main
+[33m50f5f7c[m HEAD@{20}: commit: feat:Add model #1
+[33mc1106a1[m HEAD@{21}: checkout: moving from main to feature/issue-1-models
+[33mc1106a1[m HEAD@{22}: Branch: renamed refs/heads/master to refs/heads/main
+[33mc1106a1[m HEAD@{24}: commit (initial): first commit Add migration
