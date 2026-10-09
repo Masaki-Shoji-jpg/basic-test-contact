@@ -13,7 +13,7 @@ class Tag extends Model
         'name',
     ];
 
-    public function contacts(): BelongsToMany
+    public function contacts()
     {
         return $this->belongsToMany(Contact::class);
     }

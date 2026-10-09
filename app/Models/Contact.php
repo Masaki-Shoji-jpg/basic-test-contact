@@ -4,7 +4,7 @@ namespace App\Models;
 
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
-use Illuminate\Database\Eloquent\Relations\BelongsToMany; 
+use Illuminate\Database\Eloquent\Relations\BelongsToMany;
 use App\Models\Tag;
 
 class Contact extends Model
@@ -22,13 +22,16 @@ class Contact extends Model
         'building',
         'detail',
     ];
+    protected $casts = [
+        'created_at' => 'datetime',
+    ];
 
-    public function category(): BelongsTo
+    public function category()
             {
                 return $this->belongsTo(Category::class);
             }
 
-    public function tags(): BelongsToMany
+    public function tags()
         {
             return $this->belongsToMany(Tag::class);
         }

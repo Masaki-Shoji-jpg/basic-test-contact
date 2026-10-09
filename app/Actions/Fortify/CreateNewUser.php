@@ -7,6 +7,7 @@ use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\Validator;
 use Illuminate\Validation\Rule;
 use Illuminate\Validation\ValidationException;
+use Illuminate\Validation\Rules\Password;
 use Laravel\Fortify\Contracts\CreatesNewUsers;
 
 class CreateNewUser implements CreatesNewUsers
@@ -31,7 +32,16 @@ class CreateNewUser implements CreatesNewUsers
                 'max:255',
                 Rule::unique(User::class),
             ],
-            'password' => $this->passwordRules(),
+            'password' => ['reqired','confirmed',Password::min(8),],
+        ],
+        [
+            'name.required' =>'名前を入力してください。',
+            'email.required' =>'メールアドレスを入力してください。',
+            'email.email' =>'メール形式で入力してください。',
+            'email.unique' =>'既に登録されています。',
+            'password.required' =>'パスワードを入力してください。',
+            'password.min' =>'八文字以上で入力してください。',
+            'password.confirmed' =>'一致しません',
         ])->validate();
 
         return User::create([
